@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> paint5.1 - Jacob Calvert </title>
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/paint-5.1.js"></script>
+    </head>
+    <body>
+        <center><div id="save_box" class="fixed_save_box"></div></center>
+        <div id="container">
+
+            <div id="title_bar_top">
+                <h3>paint 5.1</h3>
+                <p>This is a painting application built on jQuery and the Canvas element.</p>
+            </div>
+                <div id="tool_bar_left">
+                    <div id="position_box" class="tool_bar_info">Position:<br/>0,0</div>
+                    Pen size:<br/>
+                    <input class="small" type="text" id="pen_width" value=10>
+                    Color:<br/>
+                    <input class="small" type="color" id="pen_color" value="#000000">
+                    BG Color:<br/>
+                    <input class="small" type="color" id="bg_color" value="#ffffff" onchange="updateCanvasBackground()">
+                    <!--<input class="small" type="button" value="Erase" id="erase_draw_toggle" onclick="eraseDrawToggle()">-->
+                    <hr/>
+                    <input class="small" type="button" value="Clear" onclick="clearCanvas()">
+                    <input class="small" type="button" value="Save" onclick="saveCanvas()">
+
+
+                </div>
+            <canvas id="mainCanvas" height="650" width="650">Your Browser does not support the canvas element, sorry 'bout it.</canvas>
+        </div>
+
+    </body>
+</html>
